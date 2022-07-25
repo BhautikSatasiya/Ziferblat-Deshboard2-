@@ -1,0 +1,55 @@
+.box{
+    height: 15rem;
+    margin-top: 1rem;
+    outline: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+
+    &__boxis{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__perahead{
+        width: 26rem;
+      
+        @include respond(phone){
+            width: 40rem;
+        }
+    }
+
+    &__reminder{
+        margin-top: 3.2rem;
+
+        &__set{
+            display: inline-block;
+            font-size: 1.3rem;
+            color: $color-primary;
+            padding: .8rem 1.8rem;
+            border: 1px dashed rgba(128, 128, 128, 0.3);
+            border-radius: 3rem;
+        }
+    }
+
+    &__threedot{
+        display: flex;
+        gap: .6rem;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__threedots{
+        width: .6rem;
+        height: .6rem;
+        border-radius: 50%;
+        background-color: #FAE4D8;
+    }
+    .oranged{
+        background-color: #EFB797;
+    }
+    
+}

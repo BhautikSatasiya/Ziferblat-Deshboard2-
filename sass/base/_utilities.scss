@@ -1,0 +1,52 @@
+.u-margin-top-minus{ margin-top: -.5rem !important; }
+.u-margin-top-small{ margin-top: 2rem !important; }
+.u-margin-top-medium{ margin-top: 4rem !important; }
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 15rem !important; }
+
+// Header
+.active-class{
+    background-color: $color-back-light;
+}
+.help-circle{
+    margin-top: 6.8rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem 1.6rem;
+    color: $color-primary;
+    cursor: pointer;
+    @include respond(phone){
+        margin-top: .6rem;
+    }
+}
+
+//Section
+
+.back{
+    position: relative;
+    z-index: 2;
+}
+.backs{
+    position: relative;
+    z-index: 0;
+}
+
+
+//aside part
+.right{
+    margin-right: 5rem;
+}
+.left{
+    margin-left: -1.6rem;
+}
+.top{
+    margin-top: -.4rem;
+}
+.JR{
+    background-color: #FCF2E0;
+    color: #F0884F;
+    display: flex;
+    padding-top: 1.4rem;
+    justify-content: center;
+}
+

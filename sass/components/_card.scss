@@ -1,0 +1,137 @@
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.6rem;
+    height: 36rem;
+    margin-top: 1rem;
+    
+    
+
+    &__cards{
+        background-color: #FBBDA3;
+        border-radius: 2.6rem ;
+        padding: 3rem 3rem;
+
+
+
+    }
+
+    &__cards--scheme{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__card--img{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+    }
+    &__cards--before{
+        position: relative;
+        display: inline-block;
+        margin-bottom: -4rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: #FFF;
+        border: 2px solid #FBBDA3;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        z-index: 3;
+    }
+    &__cards--imgs{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        margin-left: -2rem;
+        border: 2px solid #FBBDA3;
+
+        &:not(:last-child){
+            margin-left: 2rem;
+        }
+
+    }
+
+    &__cards--icon{
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+        text-align: center;
+        margin-top: .6rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__cards--icons{
+        width: .6rem;
+        height: .6rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+    }
+
+    &__cards--heading{
+        height: 7rem;
+        padding-right: 1.3rem;
+        margin-top: 3rem;
+        margin-left: .2rem;
+
+        @include respond(desktop) {
+            padding-right: 0;
+        }
+
+        &--pera{
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $color-primary;
+            margin-top: 1rem;
+        }
+    }
+
+    &__cards--line{
+        margin-top: 11.2rem;
+    }
+    &__cards--lines{
+        width: 100%;
+        height: .6rem;
+        border-radius: 6rem;
+        border: none;
+        background-color: #DEA690;
+        margin-top: .7rem; 
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 35%;
+            height: .6rem;
+            border-radius: 6rem;
+            border: none;
+            background-color: $color-primary;
+        }
+        
+    }
+
+    .cards--second{
+        background-color: #FCE6BB;
+    }
+    .ls{
+        background-color: #DFC9A5;
+        &::after{
+            width: 75%;
+        }
+    }
+    .twos{
+        background-color: #FCE6BB;
+        border: 2px solid $color-primary;
+        color: $color-primary;
+    }
+    .repeat{
+        border: 2px solid #FCE6BB;
+    }
+}
